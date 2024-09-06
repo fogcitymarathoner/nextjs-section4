@@ -1,8 +1,6 @@
 import Link from "next/link";
 
 export default function NewsList({news}){
-    console.log('NewsList news ' + news);
-    // console.log(Object.keys(news))
     return (
 <ul className="news-list">
         {news.map((newsItem) =>

@@ -3,7 +3,7 @@ import NewsList from "@/components/news-list";
 
 export default function LatestNewsPage(){
     const latestNews = getLatestNews();
-console.log(latestNews);
+
     return (
         <>
             <h2>Latest News</h2>
