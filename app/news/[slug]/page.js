@@ -1,8 +1,6 @@
 import {DUMMY_NEWS} from "@/dummy-news";
 import {notFound} from "next/navigation";
 import Link from "next/link";
-import ImagePage from "next/image";
-import Image from "next/image";
 
 export default function NewsDetail({params}) {
     const newsSlug = params.slug

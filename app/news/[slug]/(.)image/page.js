@@ -1,7 +1,7 @@
 import {DUMMY_NEWS} from "@/dummy-news";
 import {notFound} from "next/navigation";
 
-export default function ImagePage({params}) {
+export default function InterceptedImagePage({params}) {
     const newsItemSlug = params.slug
 
     const newsItem = DUMMY_NEWS.find(newsItem => newsItem.slug === newsItemSlug)
@@ -11,12 +11,13 @@ export default function ImagePage({params}) {
 
     return (
         <>
-            <div className="modal-backdrop"/>
-            <dialog className="modal" open>
+          {/*  <div className="modal-backdrop"/>
+            <dialog className="modal" open>*/}
+            <h2>Intercepted!</h2>
                 <div className="fullscreen-image">
                     <img src={`/images/news/${newsItem.image}`} alt={newsItem.title}/>
                 </div>
-            </dialog>
+            {/*</dialog>*/}
         </>
     )
 }
